@@ -118,9 +118,9 @@ Follow the steps below to complete the Android configuration.
 - **authorization_user_agent** can be set to one of the following values:
 ```json
 "authorization_user_agent": "BROWSER"
-or
-"authorization_user_agent": "WEBVIEW"
 
+"authorization_user_agent": "WEBVIEW"
+```
 ---
 
 ### Add Internet and Network State permission in AndroidManifest.xml
@@ -187,7 +187,7 @@ If you are using a **broker** for authentication, make sure to add the following
 
 - Add your application's redirect URI scheme to your `Info.plist` file:
 
-  ```plist
+```plist
   <key>CFBundleURLTypes</key>
   <array>
     <dict>
@@ -197,16 +197,16 @@ If you are using a **broker** for authentication, make sure to add the following
         </array>
     </dict>
   </array>
-  ```
+```
 
 - Add `LSApplicationQueriesSchemes` to allow the [Microsoft Authenticator] app to be used as a broker for authentication.This is **not required** when using `Safari Browser` or `WebView` as the broker.
-  ```plist
+```plist
   <key>LSApplicationQueriesSchemes</key>
   <array>
 	  <string>msauthv2</string>
 	  <string>msauthv3</string>
   </array>
-  ```
+```
 
   - If you use `Broker.msAuthenticator` after declaring the above schemes but the Authenticator app is not installed on the iPhone, the authentication will fall back to using `Safari Browser`.
 
