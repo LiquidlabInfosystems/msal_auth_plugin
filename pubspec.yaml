@@ -1,0 +1,27 @@
+name: msal_auth_plugin
+description: "A Flutter plugin for Microsoft Entra ID (Azure AD) authentication using MSAL."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.9.2
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.msal_auth_plugin
+        pluginClass: MsalAuthPlugin
+      ios:
+        pluginClass: MsalAuthPlugin
