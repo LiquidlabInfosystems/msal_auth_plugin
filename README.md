@@ -320,6 +320,12 @@ For detailed platform-specific configuration, refer to the official Microsoft Az
 - **Android MSAL setup:** [Microsoft Authentication Library (MSAL) for Android](https://learn.microsoft.com/en-gb/entra/identity-platform/tutorial-mobile-app-android-prepare-app?tabs=workforce-tenant)  
 - **iOS MSAL setup:** [Microsoft Authentication Library (MSAL) for iOS](https://learn.microsoft.com/en-gb/entra/identity-platform/tutorial-mobile-app-ios-swift-sign-in?pivots=workforce)
 
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
 
