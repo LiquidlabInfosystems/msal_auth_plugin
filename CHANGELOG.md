@@ -1,4 +1,4 @@
-## [1.0.0] - 2024-12-19
+## [1.0.0]
 
 ### Added
 - Initial release of msal_auth_plugin
@@ -9,12 +9,5 @@
 - Complete authentication result with account information
 - Example app demonstrating plugin usage
 - Comprehensive documentation and setup guide
-
-### Fixed
-- BuildContext usage across async gaps
-- Removed unnecessary library name declaration
-- Added proper homepage and repository fields to pubspec.yaml
-
-## [0.0.1] - 2024-12-19
 
 * TODO: Describe initial release.
