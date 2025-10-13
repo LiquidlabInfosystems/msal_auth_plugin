@@ -89,6 +89,42 @@ This plugin offers full customization, allowing you to provide a configuration `
 
 Follow the steps below to complete the Android configuration.
 
+### Gradle repository setup (required)
+
+MSAL depends on `com.microsoft.device.display:display-mask`, which is hosted on Microsoft's Duo SDK Maven feed. Add the repository to your Android project's Gradle repositories so the dependency can be resolved.
+
+Kotlin DSL (`build.gradle.kts`):
+```kotlin
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed/maven/v1")
+            name = "Duo-SDK-Feed"
+        }
+    }
+}
+```
+
+Groovy (`build.gradle`):
+```groovy
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url uri('https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed/maven/v1')
+            name 'Duo-SDK-Feed'
+        }
+    }
+}
+```
+
+Notes:
+- If your project uses `dependencyResolutionManagement { repositories { ... } }` in `settings.gradle(.kts)`, add the same `maven { ... }` block there instead.
+- After adding, run: `flutter clean && flutter pub get` before rebuilding.
+
 ### Creating MSAL Configuration JSON
 
 - Create an `msal_config.json` file in the `android/app/src/main/res/raw` folder of your project and copy the **JSON** content from the [Microsoft default configuration file].
