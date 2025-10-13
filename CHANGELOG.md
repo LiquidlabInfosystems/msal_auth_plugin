@@ -1,13 +1,18 @@
-## [1.0.0]
+# Changelog
 
-### Added
-- Initial release of msal_auth_plugin
-- Support for Android and iOS platforms
-- Interactive and silent token acquisition
-- Multiple authentication brokers (MS Authenticator, Browser, In-App WebView)
-- Single account mode support
-- Complete authentication result with account information
-- Example app demonstrating plugin usage
-- Comprehensive documentation and setup guide
+All notable changes to this project will be documented in this file.
 
-* TODO: Describe initial release.
+## [1.0.0] - 2025-10-13
+
+### 🚀 Added
+- Initial release of **msal_auth_plugin**  
+- Support for **Android** and **iOS** platforms  
+- **Interactive** and **silent** token acquisition methods  
+- Support for multiple authentication brokers:  
+  - Microsoft Authenticator  
+  - System Browser  
+  - In-App WebView  
+- **Single account mode** authentication support  
+- Detailed **authentication result** including account information  
+- Example app demonstrating plugin integration and usage  
+- **Comprehensive documentation** and setup guide for Android & iOS
